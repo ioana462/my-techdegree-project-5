@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+  height: fit-content;
+  min-height: 100vh;
+  padding: 50px 0;
+}
+
+#search {
+  display: block;
+  width: 70%;
+  max-width: 600px;
+  padding: 15px;
+  margin: 0 auto 30px auto;
+  border: 1px solid rgb(179, 177, 177);
+  border-radius: 5px;
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  grid-template-rows: auto;
+  width: 100%;
+  max-width: 960px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.gallery img {
+  width: 100%;
+  min-height: 200px;
+  object-fit: cover;
+}
